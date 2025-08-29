@@ -57,23 +57,35 @@
     <div class="card">
       <h3>AI-Driven Smart Cities</h3>
       <p>Urban spaces powered by AI for efficient energy use, traffic management, and sustainability.</p>
+      <button onclick="vote(this)">Vote (<span>0</span>)</button>
     </div>
     <div class="card">
       <h3>Space Colonization</h3>
       <p>Living beyond Earth on Mars and the Moon with advanced habitats.</p>
+      <button onclick="vote(this)">Vote (<span>0</span>)</button>
     </div>
     <div class="card">
       <h3>Brain-Computer Interfaces</h3>
       <p>Direct communication between the human brain and machines.</p>
+      <button onclick="vote(this)">Vote (<span>0</span>)</button>
     </div>
     <div class="card">
       <h3>Quantum Internet</h3>
       <p>Ultra-secure, super-fast internet using quantum entanglement.</p>
+      <button onclick="vote(this)">Vote (<span>0</span>)</button>
     </div>
   </div>
 
   <footer>
     <p>Created for Future Tech & Exploration 🌍 | © 2025</p>
   </footer>
+  <script>
+    function vote(button) {
+      let span = button.querySelector("span");
+      let count = parseInt(span.innerText);
+      span.innerText = count + 1;
+    }
+  </script>
 </body>
 </html>
+
